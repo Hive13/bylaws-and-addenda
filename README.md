@@ -1,0 +1,2 @@
+bylaws-and-membership-addendum
+==============================
