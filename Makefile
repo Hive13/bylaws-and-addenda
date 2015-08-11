@@ -2,7 +2,8 @@ all: buildlatex
 
 buildlatex: 
 	pdflatex bylaws.tex
-	pdflatex addendum.tex
+	pdflatex membership-addendum.tex
+	pdflatex warden-addendum.tex
 
 clean:
 	rm *.log
