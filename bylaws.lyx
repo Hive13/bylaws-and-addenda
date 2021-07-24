@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -37,6 +37,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -77,6 +79,7 @@
 \suppress_date true
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -85,7 +88,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -99,8 +105,7 @@
 \begin_body
 
 \begin_layout Title
-AMENDED AND RESTATED BYLAWS OF SAD BEE, INC.
- 
+BYLAWS OF SAD BEE, INC.
 \end_layout
 
 \begin_layout Section
@@ -129,6 +134,7 @@ status open
 LatexCommand href
 name "http://www.law.cornell.edu/uscode/text/26/501"
 target "http://www.law.cornell.edu/uscode/text/26/501"
+literal "false"
 
 \end_inset
 
@@ -254,11 +260,12 @@ In order to be a Member, a person must apply via the membership application,
 \end_layout
 
 \begin_layout Enumerate
-Any eligible person may be approved as a Member, at any meeting with any
- Director or Officer to complete the membership application form and waiver
- of liability.
- The official membership application must be signed by two Officers or Directors.
- Upon payments of their first periodic dues their membership is validated.
+Any eligible person may be approved as a Member following completion of
+ the membership application form and waiver of liability.
+ The official membership application must be signed by an Officer, Director,
+ or any member designated by the Board of Directors to have the authority
+ to approve such applications.
+ Upon payments of their first periodic dues, their membership is validated.
 \end_layout
 
 \begin_layout Enumerate
@@ -1732,8 +1739,7 @@ d for one or more exempt purposes within the meaning of Section 501(c)(3)
 \end_layout
 
 \begin_layout Standard
-These Amended and Restated Bylaws were approved by a Vote of the Membership
- on July 14, 2020.
+These Bylaws were approved by a Vote of the Membership on July 20, 2021.
 \end_layout
 
 \begin_layout Right Address
@@ -1744,7 +1750,7 @@ These Amended and Restated Bylaws were approved by a Vote of the Membership
 \end_layout
 
 \begin_layout Right Address
-Witness my hand, in Cincinnati, Ohio, on this [●] day of [●], 2020.
+Witness my hand, in Cincinnati, Ohio, on this [●] day of [●], 2021.
 \end_layout
 
 \begin_layout Right Address
