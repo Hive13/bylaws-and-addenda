@@ -1,0 +1,35 @@
+name: Edit Bylaws Wiki Page
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs: 
+  update-bylaws:
+    name: Update Hive13 Bylaws on Wiki
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - run: mkdir mw_output
+    - run: echo "{{Wikibot}}" > mw_header.txt
+    - run: echo "{{Category:Manual}}" >> mw_header.txt
+    - run: echo "[[Category:Manual/Legal]]" >> mw_header.txt
+    - run: echo "[[Category:Bylaws]]" >> mw_header.txt
+    - name: Convert Markdown to WikiText
+      uses: docker://pandoc/core:3
+      with:
+        args: -f markdown -t mediawiki -o mw_output/bylaws.wiki -B mw_header.txt bylaws.md
+    - name: Edit Wiki Page
+      uses: jtmullen/mediawiki-edit-action@v0
+      with: 
+        wiki_text_file: "mw_output/bylaws.wiki"
+        edit_summary: "New push to ${{ github.repository }} ${{ github.ref_type }} ${{ github.ref_name }} commit sha ${{ github.sha }} (${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})"
+        page_name: "Bylaws"
+        api_url: "https://wiki.hive13.org/api.php"
+        username: "BylawsBot"
+        password: ${{ secrets.WIKIBOT_PASSWORD }}
+        append: false
+        minor: false
