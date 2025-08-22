@@ -31,5 +31,3 @@ jobs:
         api_url: "https://wiki.hive13.org/api.php"
         username: "BylawsBot"
         password: ${{ secrets.WIKIBOT_PASSWORD }}
-        append: false
-        minor: false
