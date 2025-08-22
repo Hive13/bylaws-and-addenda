@@ -14,7 +14,7 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v2
     - run: mkdir mw_output
-    - run: echo "{{Wikibot}}" > mw_header.txt
+    - run: echo "{{BylawsBot}}" > mw_header.txt
     - run: echo "{{Category:Manual}}" >> mw_header.txt
     - run: echo "[[Category:Manual/Legal]]" >> mw_header.txt
     - run: echo "[[Category:Bylaws]]" >> mw_header.txt
