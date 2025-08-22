@@ -1,14 +1,9 @@
-bylaws-and-membership-addendum
-==============================
+# Bylaws of Sad Bee, Inc. (d/b/a Hive13)
 
-These are the bylaws and the membership addendum for hive13.
+This repository serves as the authoritative source for the bylaws of Hive13 
+as amended.
 
-To build the PDF's for yourself, just run:
+See [`bylaws.md`](bylaws.md) for the full text.
 
-    make
-
-To clean the directory of working files that are used by LaTeX, run:
-    make clean
-
-Questions?  Bug someone in IRC (iwilson, usually).
-
+If you have questions, contact a member of leadership or email 
+leadership@hive13.org.
